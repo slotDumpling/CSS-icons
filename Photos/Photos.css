@@ -1,0 +1,81 @@
+html {
+  font-size: 50px;
+}
+body {
+  margin: 0;
+  padding: .625em;
+  position: relative;
+}
+img {
+  position: absolute;
+  top: 0; left: 0;
+  /* max-width: 10em; */
+  z-index: -100;
+}
+.icon-border {
+  box-sizing: border-box;
+  width: 8.75em;
+  height: 8.75em;
+  border: .03em solid #a6a6a6;
+  border-radius: 2em;
+  position: relative;
+  /* background-color: white; */
+}
+.oval {
+  position: absolute;
+  width: 2.33em;
+  height: 3.57em;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 106%;
+  border-radius: 50%/33%;
+  mix-blend-mode: multiply;
+}
+#orange {
+  background: linear-gradient(#f89b35,#fec12a 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0turn);
+}
+#yellow {
+  background: linear-gradient(#f6e322,#e3e031 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.125turn);
+}
+#green {
+  background: linear-gradient(#c7db43,#9ace68 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.25turn);
+}
+#green-blue {
+  background: linear-gradient(#6bc294,#6dbdbd 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.375turn);
+}
+#blue {
+  background: linear-gradient(#6bb7e4,#85a3d4 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.5turn);
+}
+#purple {
+  background: linear-gradient(#9d8ec3,#b58ec1 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.625turn);
+}
+#pink {
+  background: linear-gradient(#cd8cbd,#e17790 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.75turn);
+}
+#red {
+  background: linear-gradient(#f26866,#f48156 50%);
+  transform: 
+    translate(-50%, -106%)
+    rotate(0.875turn);
+}

@@ -1,0 +1,177 @@
+html {
+  font-size: 50px;
+}
+body {
+  margin: 0;
+  padding: .625em;
+  position: relative;
+}
+img {
+  position: absolute;
+  top: .625em; left: .625em;
+  max-width: 8.75em;
+  z-index: -100;
+}
+.icon-border {
+  box-sizing: border-box;
+  width: 8.75em;
+  height: 8.75em;
+  /* border: .03em solid #a6a6a6; */
+  border-radius: 2em;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+.chunk{
+  position: absolute;
+}
+#lawn {
+  width: 60%;
+  height: 15%;
+  background-color: #75c63b;
+  border: .1em solid #6aa43d;
+  border-top: 0; border-left: 0;
+}
+#pink {
+  right: 0;
+  width: 22%;
+  height: 15%;
+  background-color: #fbc5d2;
+  border: .1em solid #e3afbb;
+  border-top: 0; border-right: 0;
+}
+#ground {
+  bottom: 0;
+  width: 100%;
+  height: 68%;
+  background-color: #e4ddca;
+  border-top: .1em solid #c8c2b6;
+  overflow: hidden;
+}
+.highway {
+  position: absolute;
+  left: -60%;
+  top: 75%;
+  transform: rotate(-30deg);
+}
+.hwy {
+  position: absolute;
+  width: 8.5em;
+  height: 8.5em;
+  border-radius: 50%;
+  background: radial-gradient(transparent 0 2.75em, #fdae09 0 3em, #ffdf01 0 4em, #fdae09 0);
+}
+#hwy1 {
+  clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+}
+#hwy2 {
+  left: 7em;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+#interstate {
+  position: absolute;
+  top: -8%;
+  left: 7%;
+  width: 3.3em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: red;
+  overflow: hidden;
+  background: radial-gradient(transparent 0 64%,white 0),linear-gradient(#dc1d2d 0 45%, white 0 50%,#1a75f9 0);
+}
+#interstate::before{
+  content: '';
+  position: absolute;
+  top: -52%;
+  left: -18%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #e4ddca;
+  box-shadow: 0 0 0 0.15em white;
+}
+#interstate::after{
+  content: '';
+  position: absolute;
+  top: -52%;
+  right: -18%;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #e4ddca;
+  box-shadow: 0 0 0 0.15em white;
+  clip-path: polygon(0 120%, 0 140%, 50% 50%, 100% 120%);
+}
+#interstate > p {
+  font-family: fantasy;
+  font-size: 1.3em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%);
+}
+#road {
+  bottom: 0;
+  left: 60%;
+  width: 15.5%;
+  height: 69.2%;
+  background-color: white;
+  border: .1em solid #c8c2b6;
+  border-top: 0; border-bottom: 0;
+}
+#path {
+  right: 0; top: 60%;
+  width: 23.3%;
+  height: 15.5%;
+  background-color: white;
+  border: .1em solid #c8c2b6;
+  border-right: 0; border-left: 0;
+}
+#route {
+  position: absolute;
+  top: 19%;
+  left: -10%;
+  width: 81.5%;
+  height: 54%;
+
+  border-radius: 0 0.6em 0 0;
+  border: .15em solid #0966ce;
+  border-left: 0;
+  border-bottom: 0;
+
+  background: 
+  linear-gradient(#1fbafd 0 .5em, #0966ce 0 0.65em, transparent 0),
+  linear-gradient(to left, #1fbafd 0 .5em, #0966ce 0 0.65em, transparent 0);
+  background-size: 93% 100%, 100% 100%;
+  background-repeat: no-repeat;
+}
+#location {
+  position: absolute;
+  width: 1.7em;
+  height: 1.7em;
+  left: 59.2%;
+  top: 59%;
+  border-radius: 50%;
+  background-color: #0082fc;
+  box-shadow: 0 0.05em 0.1em rgb(0 0 0 / 30%);
+}
+#loaction-shadow {
+  position: absolute;
+  width: 1.2em;
+  height: .8em;
+  border-radius: 50%;
+  background-color: white;
+  left: 62%;
+  top: 58.1%;
+}
+#arrow {
+  position: absolute;
+  width: 50%;
+  height: 67%;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -54%);
+  clip-path: polygon(50% 0, 100% 100%,50% 65% ,0% 100%);
+}

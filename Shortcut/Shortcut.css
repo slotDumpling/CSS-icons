@@ -1,0 +1,39 @@
+html {
+  font-size: 50px;
+}
+body {
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.icon-border {
+  box-sizing: border-box;
+  width: 8.75em;
+  height: 8.75em;
+  border-radius: 2em;
+  position: relative;
+  background-color: #1c1e5a;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1em;
+}
+.diamond-wrapper {
+  transform: scaleY(0.8);
+  margin: -1.1em;
+}
+.diamond {
+  height: 4.4em;
+  width: 4.4em;
+  border-radius: 1em;
+  transform: rotate(45deg);
+}
+#top {
+  background: linear-gradient(#f368d5, #f75f5c);
+  -webkit-mask: linear-gradient(225deg ,#0000, #0003 20%, #0008 40%, #000f 70%), linear-gradient(300deg ,#0000, #0003 30%, #0008 50%, #000f 70%);
+}
+#bottom {
+  background: linear-gradient(#137af6, #41cd9f);
+  -webkit-mask: linear-gradient(45deg ,#0000, #0003 20%, #0008 40%, #000f 70%), linear-gradient(135deg ,#0000, #0003 30%, #0008 50%, #000f 70%);
+}
